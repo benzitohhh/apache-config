@@ -1,0 +1,14 @@
+<VirtualHost *:80>
+        ServerName toessay.co.uk.ben
+        ServerAlias www.toessay.co.uk.ben
+        DocumentRoot /Users/immanuel_ben/Desktop/toessay/wordpress/
+
+        <Directory "/Users/immanuel_ben/Desktop/toessay/wordpress">
+    		Options Indexes FollowSymLinks MultiViews 
+    		AllowOverride All
+    		Order allow,deny
+    		Allow from all
+	</Directory>
+
+</VirtualHost>
+

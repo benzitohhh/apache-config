@@ -1,0 +1,26 @@
+<VirtualHost *:80>
+ 	DocumentRoot /Users/immanuel_ben/Desktop/
+	<Directory "/Users/immanuel_ben/Desktop">
+    		Options Indexes FollowSymLinks MultiViews 
+    		AllowOverride None
+    		Order allow,deny
+    		Allow from all
+	</Directory>
+
+# 	DocumentRoot /Users/immanuel_ben/Sites/
+#	<Directory "/Users/immanuel_ben/Sites">
+#    		Options Indexes FollowSymLinks MultiViews 
+#    		AllowOverride None
+#    		Order allow,deny
+#    		Allow from all
+#	</Directory>
+
+#	DocumentRoot /var/www/
+#	<Directory "/var/www">
+#    		Options Indexes MultiViews 
+#    		AllowOverride None
+#    		Order allow,deny
+#    		Allow from all
+#	</Directory>
+</VirtualHost>
+

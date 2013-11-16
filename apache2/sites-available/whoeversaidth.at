@@ -1,0 +1,20 @@
+<VirtualHost *:80>
+        ServerName whoeversaidth.at.ben
+        ServerAlias www.whoeversaidth.at.ben
+        DocumentRoot "/Users/immanuel_ben/dev/src/whoeversaidth.at/client"
+        ProxyPass /score ajp://127.0.0.1:8009/whoeversaidthat_services-0.1/score
+        ProxyPassReverse /score ajp://127.0.0.1:8009/whoeversaidthat_services-0.1/score
+
+        <Directory />
+                Options FollowSymLinks
+                AllowOverride None
+        </Directory>
+        <Directory /var/www/>
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride None
+                Order allow,deny
+                allow from all
+        </Directory>
+
+</VirtualHost>
+
